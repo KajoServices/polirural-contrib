@@ -6,7 +6,9 @@ from collections import OrderedDict
 
 
 PUNC_TAB = str.maketrans('', '', string.punctuation)
-models = {'en': 'en_core_web_md'}
+models = {
+    'en': 'en_core_web_md'
+}
 
 
 def ls(text):
@@ -24,15 +26,14 @@ class TextProcessor:
 
     def __init__(self, lang, *args, **kwargs):
         """
-        :param text: <str>
         :param lang: <str>
+        :kwarg max_length: maximum document size in words (default 450K).
+        #                  For big texts use max_length = 2_500_000`
+        #                  Warning: safe if not using NER!
         """
         # TODO: make it downloadable, if absent (use tenacity)
         self.nlp = spacy.load(models[lang])
-
-        # Warning! `max_length = 2_500_000` is safe, ONLY if not using NER!
-        #          Otherwise change to default (1_000_000)
-        self.nlp.max_length = 2500000
+        self.nlp.max_length = kwargs.get('max_length', 450000)
         self.tokenizer = spacy.tokenizer.Tokenizer(self.nlp.vocab)
 
     @staticmethod
