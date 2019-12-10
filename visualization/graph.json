@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "id": "data_mining",
+      "color": "#9C2E17",
+      "size": 4.0
+    },
+    {
+      "id": "machine_learning",
+      "color": "#E2750E",
+      "size": 5.0
+    },
+    {
+      "id": "neural_networks",
+      "color": "#FFD403",
+      "size": 6.0
+    },
+    {
+      "id": "deep_learning",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "text_mining",
+      "color": "#E2750E",
+      "size": 4.0
+    },
+    {
+      "id": "visualisation",
+      "color": "#FFD403",
+      "size": 7.0
+    },
+    {
+      "id": "data_visualisation",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "pattern_recognition",
+      "color": "#E2750E",
+      "size": 5.0
+    },
+    {
+      "id": "image_processing",
+      "color": "#FFD403",
+      "size": 6.0
+    },
+    {
+      "id": "computer_vision",
+      "color": "#FFD403",
+      "size": 5.0
+    },
+    {
+      "id": "image_analysis",
+      "color": "#FFD403",
+      "size": 6.0
+    },
+    {
+      "id": "artificial_intelligence",
+      "color": "#E2750E",
+      "size": 7.0
+    },
+    {
+      "id": "expert_systems",
+      "color": "#FFD403",
+      "size": 6.0
+    },
+    {
+      "id": "robotics",
+      "color": "#FFD403",
+      "size": 8.0
+    },
+    {
+      "id": "data_analytics",
+      "color": "#E2750E",
+      "size": 4.0
+    },
+    {
+      "id": "analytics",
+      "color": "#FFD403",
+      "size": 6.0
+    },
+    {
+      "id": "big_data_analytics",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "big_data",
+      "color": "#FFD403",
+      "size": 8.0
+    },
+    {
+      "id": "information_retrieval",
+      "color": "#E2750E",
+      "size": 5.0
+    },
+    {
+      "id": "retrieval",
+      "color": "#FFD403",
+      "size": 9.0
+    },
+    {
+      "id": "data_retrieval",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "database_management",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "indexing",
+      "color": "#FFD403",
+      "size": 7.0
+    },
+    {
+      "id": "data_integration",
+      "color": "#E2750E",
+      "size": 5.0
+    },
+    {
+      "id": "data_management",
+      "color": "#FFD403",
+      "size": 7.0
+    },
+    {
+      "id": "data_analysis",
+      "color": "#FFD403",
+      "size": 9.0
+    },
+    {
+      "id": "data_harmonisation",
+      "color": "#FFD403",
+      "size": 4.0
+    },
+    {
+      "id": "data_fusion",
+      "color": "#FFD403",
+      "size": 4.0
+    }
+  ],
+  "links": [
+    {
+      "source": "data_mining",
+      "target": "machine_learning",
+      "value": 0.2
+    },
+    {
+      "source": "machine_learning",
+      "target": "neural_networks",
+      "value": 0.1
+    },
+    {
+      "source": "machine_learning",
+      "target": "deep_learning",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "text_mining",
+      "value": 0.2
+    },
+    {
+      "source": "text_mining",
+      "target": "visualisation",
+      "value": 0.1
+    },
+    {
+      "source": "text_mining",
+      "target": "data_visualisation",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "pattern_recognition",
+      "value": 0.2
+    },
+    {
+      "source": "pattern_recognition",
+      "target": "image_processing",
+      "value": 0.1
+    },
+    {
+      "source": "pattern_recognition",
+      "target": "computer_vision",
+      "value": 0.1
+    },
+    {
+      "source": "pattern_recognition",
+      "target": "neural_networks",
+      "value": 0.1
+    },
+    {
+      "source": "pattern_recognition",
+      "target": "image_analysis",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "artificial_intelligence",
+      "value": 0.2
+    },
+    {
+      "source": "artificial_intelligence",
+      "target": "expert_systems",
+      "value": 0.1
+    },
+    {
+      "source": "artificial_intelligence",
+      "target": "robotics",
+      "value": 0.1
+    },
+    {
+      "source": "artificial_intelligence",
+      "target": "computer_vision",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "data_analytics",
+      "value": 0.2
+    },
+    {
+      "source": "data_analytics",
+      "target": "analytics",
+      "value": 0.1
+    },
+    {
+      "source": "data_analytics",
+      "target": "big_data_analytics",
+      "value": 0.1
+    },
+    {
+      "source": "data_analytics",
+      "target": "big_data",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "information_retrieval",
+      "value": 0.2
+    },
+    {
+      "source": "information_retrieval",
+      "target": "retrieval",
+      "value": 0.1
+    },
+    {
+      "source": "information_retrieval",
+      "target": "data_retrieval",
+      "value": 0.1
+    },
+    {
+      "source": "information_retrieval",
+      "target": "database_management",
+      "value": 0.1
+    },
+    {
+      "source": "information_retrieval",
+      "target": "indexing",
+      "value": 0.1
+    },
+    {
+      "source": "data_mining",
+      "target": "data_integration",
+      "value": 0.2
+    },
+    {
+      "source": "data_integration",
+      "target": "data_management",
+      "value": 0.1
+    },
+    {
+      "source": "data_integration",
+      "target": "data_analysis",
+      "value": 0.1
+    },
+    {
+      "source": "data_integration",
+      "target": "data_harmonisation",
+      "value": 0.1
+    },
+    {
+      "source": "data_integration",
+      "target": "data_fusion",
+      "value": 0.1
+    }
+  ]
+}
