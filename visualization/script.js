@@ -33,9 +33,16 @@ d3.json(graph_url("cereal production")).then(function(graph) {
 		.force("center", d3.forceCenter(width / 2, height / 2))
     	.force("x", d3.forceX())
     	.force("y", d3.forceY());
-    	//.alphaTarget(1)
-    	//.on("tick", ticked);
+
+	restart(graph);
+});
+
+function restart(graph) {
+	// Apply the general update pattern to the nodes.
 	
+	if (link) { link.remove(); }
+	if (node) { node.remove(); }
+
 	link = svg.append("g")
 		.attr("class", "links")
 		.attr("stroke", "#000")
@@ -48,11 +55,6 @@ d3.json(graph_url("cereal production")).then(function(graph) {
 		.attr("stroke-width", 1.5)
 		.selectAll(".node");
 
-	restart(graph);
-});
-
-function restart(graph) {
-	// Apply the general update pattern to the nodes.
 	node = node.data(graph.nodes, function(d) { return d.id;});
 	node.exit().remove();
 
@@ -60,12 +62,18 @@ function restart(graph) {
 		.attr("class", "node");
 
 	g.append("circle")
-		.attr("r", function(d) { return Math.sqrt(d.size)*3;})
-		.attr("fill", function(d) { return d.color; })
+		.attr("r", function(d) {
+			return Math.sqrt(d.size) * 3;
+		})
+		.attr("fill", function(d) {
+			return d.color;
+		})
 		.attr("vector-effect", "non-scaling-stroke")
 		.attr("stroke", "white")
 		.attr("stroke-width", "2")
-		.on("click", function(d) { return click(d.id)});
+		.on("click", function(d) {
+			return click(d.id)
+		});
 	
 	g.append("text")
 		.attr("text-anchor", "middle")
@@ -80,7 +88,9 @@ function restart(graph) {
 		})
 		.attr('x', 0)
 		.attr('y', -10)
-		.on("click", function(d) { return click(d.id)});
+		.on("click", function(d) {
+			return click(d.id)
+		});
 
 	node = g.merge(node);
 
